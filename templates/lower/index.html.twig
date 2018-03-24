@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lower{% endblock %}
+
+{% block body %}
+    {{head|raw}}
+
+    {{ form_start(form) }}
+    {{ form_row(form.text1,{'value': value1 }) }}
+    {{ form_row(form.submit) }}
+    {{ form_row(form.text2,{'value': value2 }) }}
+    {{ form_row(form.radio) }}
+    {{ form_end(form) }}
+
+{% endblock %}
+
